@@ -19,7 +19,9 @@ Grey dark 3: #999
   --color-red: #fd3e4f;
   --color-purple: #fd3fb3;
   --color-white: #fff;
-  --color-red-text: #fd3e4f; }
+  --color-red-text: #fd3e4f;
+  --color-grey-text: #5c5c5c;
+  --color-grey-light: #7b7b7b; }
 
 * {
   margin: 0;
@@ -179,3 +181,42 @@ body {
     transform: translateX(2rem); }
   100% {
     transform: translateX(0); } }
+
+.advantages-section {
+  min-height: 35rem;
+  display: flex; }
+  .advantages-section__block {
+    padding: 11rem 7rem;
+    position: relative; }
+    .advantages-section__block:hover {
+      background-image: linear-gradient(to right top, var(--color-purple), var(--color-red));
+      padding-top: 5rem;
+      padding-bottom: 3rem; }
+    .advantages-section__block:hover .advantages-section__block__title {
+      color: white; }
+    .advantages-section__block:hover .advantages-section__block__text {
+      color: white; }
+    .advantages-section__block:hover .advantages-section__block__num {
+      color: white;
+      opacity: 100;
+      position: relative;
+      font-size: 6rem; }
+    .advantages-section__block__num {
+      font-size: 12rem;
+      color: var(--color-red);
+      opacity: .1;
+      position: absolute;
+      line-height: 12rem;
+      z-index: 1; }
+    .advantages-section__block__title {
+      font-size: 2rem;
+      color: var(--color-grey-text);
+      margin-bottom: 3.5rem;
+      top: 0;
+      position: relative;
+      z-index: 999; }
+    .advantages-section__block__text {
+      font-size: 1.4rem;
+      color: var(--color-grey-light);
+      z-index: 999;
+      position: relative; }

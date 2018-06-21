@@ -179,3 +179,71 @@
     transform: translateX(0);
   }
 }
+
+
+// Advantages section
+
+.advantages-section {
+  min-height: 35rem;
+  display: flex;
+
+  &__block {
+    padding: 11rem 7rem;
+    position: relative;
+
+
+
+    &:hover {
+      background-image: linear-gradient(to right top, var(--color-purple), var(--color-red));
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+    }
+    &:hover &__title {
+      color: white;
+      
+    }
+    &:hover &__text {
+      color: white;
+    }
+    &:hover &__num {
+      color: white;
+      opacity: 100;
+      position: relative;
+      font-size: 6rem;
+    }
+
+    &__num {
+      font-size: 12rem;
+      color: var( --color-red);
+      opacity: .1;
+      position: absolute;
+      line-height: 12rem;
+      z-index: 1;
+
+    }
+
+    &__title {
+      font-size: 2rem;
+      color: var(--color-grey-text);
+      margin-bottom: 3.5rem;
+      top: 0;
+      position: relative;
+      z-index: 999;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+      color: var(--color-grey-light);
+      z-index: 999;
+      position: relative;
+
+    }
+
+  }
+
+  
+
+}
+
+
+
