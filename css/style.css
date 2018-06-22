@@ -21,7 +21,9 @@ Grey dark 3: #999
   --color-white: #fff;
   --color-red-text: #fd3e4f;
   --color-grey-text: #5c5c5c;
-  --color-grey-light: #7b7b7b; }
+  --color-grey-light: #7b7b7b;
+  --color-black-light: ##222222;
+  --color-light-grey-text: #9a9a9a; }
 
 * {
   margin: 0;
@@ -43,18 +45,17 @@ body {
   height: 100vh; }
 
 .wrapper {
-  max-width: 140rem;
   width: 100vw; }
 
 .header {
-  min-height: 68rem;
   width: 100%;
   background-image: url("../images/bg-header.jpg");
   background-size: cover;
   color: var(--color-white);
   display: flex;
   flex-direction: column;
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  padding-bottom: 12rem; }
   .header-top {
     display: flex;
     justify-content: space-around; }
@@ -200,7 +201,7 @@ body {
       color: white;
       opacity: 100;
       position: relative;
-      font-size: 6rem; }
+      font-size: 8rem; }
     .advantages-section__block__num {
       font-size: 12rem;
       color: var(--color-red);
@@ -220,3 +221,158 @@ body {
       color: var(--color-grey-light);
       z-index: 999;
       position: relative; }
+
+.our-team-section {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 7rem;
+  margin-bottom: 20rem; }
+  .our-team-section__title {
+    font-size: 6rem;
+    color: var(--color-black-light);
+    margin-bottom: 8rem; }
+  .our-team-section__blocks {
+    display: flex;
+    justify-content: space-between; }
+  .our-team-section__block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    z-index: 99;
+    position: relative; }
+    .our-team-section__block:hover .our-team-section__block::after {
+      display: block;
+      background: rgba(0, 0, 0, 0.6); }
+    .our-team-section__block__figure {
+      display: block;
+      height: 46rem;
+      width: 37rem;
+      margin-bottom: 1.8rem; }
+    .our-team-section__block__img {
+      width: 100%;
+      display: block;
+      position: relative; }
+    .our-team-section__block__name {
+      font-size: 2rem; }
+    .our-team-section__block__profession {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: var(--color-light-grey-text); }
+
+.inovation-section {
+  display: flex;
+  margin-bottom: 12rem; }
+
+.left-side {
+  height: 50rem;
+  width: 74rem; }
+
+.description-side {
+  margin: 0 7rem; }
+  .description-side__title {
+    font-size: 4rem;
+    color: var(--color-black-light);
+    line-height: 5.5rem;
+    margin-bottom: 4rem; }
+    .description-side__title span {
+      color: var(--color-red); }
+  .description-side__text {
+    font-size: 2rem;
+    color: var(--color-grey-light);
+    margin-bottom: 6rem; }
+
+.section-features {
+  display: flex;
+  padding: 15rem 12rem 8rem 8rem;
+  background-color: #000; }
+
+.block-feature {
+  padding-right: 10rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 150rem; }
+  .block-feature__title {
+    color: var(--color-white);
+    font-size: 4rem;
+    margin-bottom: 4rem; }
+    .block-feature__title span {
+      color: var(--color-red); }
+  .block-feature__text {
+    font-size: 2rem;
+    color: #dfdfdf; }
+
+.blocks {
+  display: flex; }
+
+.block-col {
+  display: flex;
+  flex-direction: column; }
+  .block-col:not(:last-child) {
+    margin-right: 6rem; }
+
+.block-desc {
+  color: var(--color-white);
+  margin-bottom: 5rem; }
+  .block-desc__icon {
+    height: 5rem;
+    width: 5rem;
+    fill: var(--color-red);
+    margin-bottom: 2rem; }
+  .block-desc__title {
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  .block-desc__text {
+    font-size: 1.4rem;
+    color: #dfdfdf; }
+
+.footer {
+  padding: 8.5rem 15rem 5rem 14rem;
+  display: flex;
+  flex-direction: column; }
+  .footer__content {
+    display: flex; }
+
+.footer-left-side__title1 {
+  font-size: 8rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right top, var(--color-purple), var(--color-red));
+  /* Standard syntax; must be last */
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text; }
+
+.footer-left-side__title2 {
+  margin-left: 1rem;
+  font-size: 2.5rem; }
+
+.footer-left-side__text {
+  font-size: 1.4rem; }
+
+.footer-right-side {
+  display: flex;
+  flex-basis: 50% 50%; }
+
+.twitter-block__title {
+  font-size: 1.8rem;
+  margin-bottom: 5rem; }
+
+.twitter-block__title2 {
+  font-size: 1.6rem;
+  color: var(--color-purple);
+  font-weight: 700; }
+
+.twitter-block__title3 {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin-bottom: 3rem; }
+
+.twitter-block__text {
+  font-size: 1.4rem; }
+
+.copyright {
+  margin-top: 12.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--color-purple); }
+  .copyright span {
+    color: var(--color-red); }
