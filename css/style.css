@@ -326,11 +326,12 @@ body {
     color: #dfdfdf; }
 
 .footer {
-  padding: 8.5rem 15rem 5rem 14rem;
+  padding: 8.5rem 7rem 5rem 7rem;
   display: flex;
   flex-direction: column; }
   .footer__content {
-    display: flex; }
+    display: grid;
+    grid-template-columns: 40% 60%; }
 
 .footer-left-side__title1 {
   font-size: 8rem;
@@ -349,28 +350,73 @@ body {
   font-size: 1.4rem; }
 
 .footer-right-side {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+
+.twitter-block {
+  padding: 3rem; }
+  .twitter-block__title {
+    font-size: 1.8rem;
+    margin-bottom: 5rem; }
+  .twitter-block__title2 {
+    font-size: 1.6rem;
+    color: var(--color-purple);
+    font-weight: 700; }
+  .twitter-block__title3 {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin-bottom: 3rem; }
+  .twitter-block__text {
+    font-size: 1.4rem; }
+
+.whoweare-block {
+  padding: 3rem; }
+  .whoweare-block__title {
+    font-size: 1.8rem;
+    margin-bottom: 5rem; }
+  .whoweare-block__text {
+    font-size: 1.4rem;
+    margin-bottom: 3rem; }
+
+.email {
   display: flex;
-  flex-basis: 50% 50%; }
+  align-items: center;
+  margin-bottom: 1rem; }
+  .email__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-purple);
+    margin-right: 1rem; }
 
-.twitter-block__title {
-  font-size: 1.8rem;
-  margin-bottom: 5rem; }
+.phone {
+  display: flex;
+  align-items: center; }
+  .phone__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-purple);
+    margin-right: 1rem; }
 
-.twitter-block__title2 {
-  font-size: 1.6rem;
-  color: var(--color-purple);
-  font-weight: 700; }
-
-.twitter-block__title3 {
-  display: inline-block;
-  font-size: 1.4rem;
-  margin-bottom: 3rem; }
-
-.twitter-block__text {
-  font-size: 1.4rem; }
+.footer-social-networks {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 3rem; }
+  .footer-social-networks__icon {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    fill: var(--color-white);
+    align-self: center;
+    margin-right: 1.5rem;
+    transition: all .3s;
+    fill: var(--color-purple); }
+    .footer-social-networks__icon:hover {
+      fill: var(--color-purple);
+      transform: scale(1.5) rotate(360deg); }
 
 .copyright {
-  margin-top: 12.5rem;
+  margin-top: 8rem;
   text-align: center;
   font-size: 1.4rem;
   color: var(--color-purple); }

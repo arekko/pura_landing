@@ -422,12 +422,13 @@ max-width: 150rem;
 // Footer
 
 .footer {
-  padding: 8.5rem 15rem 5rem 14rem;
+  padding: 8.5rem 7rem 5rem 7rem;
   display: flex;
   flex-direction: column;
 
   &__content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 40% 60%;
 
   }
 }
@@ -454,10 +455,14 @@ max-width: 150rem;
   }
 }
 .footer-right-side {
-  display: flex;
-  flex-basis: 50% 50%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  
 }
 .twitter-block {
+  padding: 3rem;
+
+  
 
   &__title {
     font-size: 1.8rem;
@@ -478,8 +483,76 @@ max-width: 150rem;
   }
 }
 
+.whoweare-block {
+  padding: 3rem;
+
+
+  &__title {
+    font-size: 1.8rem;
+    margin-bottom: 5rem;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.email {
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-purple);
+    margin-right: 1rem;
+  }
+}
+
+.phone {
+
+  display: flex;
+  align-items: center;
+
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-purple);
+    margin-right: 1rem;
+  }
+}
+
+.footer-social-networks{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 3rem;
+  
+
+  &__icon {
+    display: flex;
+    height: 3rem;
+    width: 3rem;
+    fill: var(--color-white);
+    align-self: center;
+    margin-right: 1.5rem;
+    transition: all .3s;
+    fill: var(--color-purple);
+    &:hover {
+      fill: var(--color-purple);
+      transform: scale(1.5) rotate(360deg);
+    }
+  }
+}
+
+
 .copyright {
-  margin-top: 12.5rem;
+  margin-top: 8rem;
   text-align: center;
   font-size: 1.4rem;
   color: var(--color-purple);
